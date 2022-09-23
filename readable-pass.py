@@ -2,7 +2,8 @@ import random
 import string
 
 wordlist = []
-special_char = list(string.punctuation)  # getting a list of all special characters
+# getting a list of all special characters
+special_char = list(string.punctuation)
 
 # open the file
 with open("wikipedia-text.txt", 'r') as file:
@@ -19,8 +20,11 @@ for item in words:
 
 word = random.choice(wordlist)
 schar = random.choice(special_char)
-num = str(random.randint(10, 90)) # returns int value and 10 and 90 are included
+# returns int value and 10 and 90 are included
+num = str(random.randint(10, 90))
 
 passw = word + schar + num
 
 print(passw)
+
+# checking token
